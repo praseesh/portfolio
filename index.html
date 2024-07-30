@@ -71,11 +71,100 @@
     content: "\f0e0"; /* Email icon code from Font Awesome */
 }
 
-@media (max-width: 600px) {
-    .social-icons {
-        flex-direction: column; /* Stack icons vertically on smaller screens */
+@media (max-width: 1200px) {
+        /* Styles for screens smaller than 1200px */
+        .desc h2 {
+            font-size: 24px;
+        }
+
+        .desc h1 {
+            font-size: 36px;
+        }
+
+        .desc p {
+            font-size: 16px;
+        }
     }
+
+    @media (max-width: 992px) {
+        /* Styles for screens smaller than 992px */
+        .desc h2 {
+            font-size: 22px;
+        }
+
+        .desc h1 {
+            font-size: 34px;
+        }
+
+        .desc p {
+            font-size: 15px;
+        }
+
+        .hero-wrap .col-md-8 {
+            width: 100%;
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        /* Styles for screens smaller than 768px */
+        .desc h2 {
+            font-size: 20px;
+        }
+
+        .desc h1 {
+            font-size: 32px;
+        }
+
+        .desc p {
+            font-size: 14px;
+        }
+
+        .hero-wrap {
+            background-position: center;
+        }
+
+        .img {
+            background-size: contain;
+        }
+    }
+
+    @media (max-width: 576px) {
+        /* Styles for screens smaller than 576px */
+        .desc h2 {
+            font-size: 18px;
+        }
+
+        .desc h1 {
+            font-size: 28px;
+        }
+
+        .desc p {
+            font-size: 13px;
+        }
+
+        .hero-wrap {
+            padding: 30px;
+        }
+
+        .social-icons {
+            flex-direction: column; /* Stack icons vertically on smaller screens */
+        }
+    }
+	@media (min-width: 768px) and (max-width: 992px) {
+  .col-md-8 .img {
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image within the div */
+    width: 100%; /* Makes the image responsive */
+    height: 300px; /* Adjust height as needed for your design */
+  }
+
+  .col-md-8 .desc {
+    padding: 20px; /* Adjust padding for better text positioning */
+    text-align: center; /* Center text if needed */
+  }
 }
+
 	</style>
   </head>
   <body>
